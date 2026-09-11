@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Saibro</title>
+  <meta name="description" content="Saibro — em breve.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#08110D">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --surface-deep: #08110D;
+      --surface: #0D1813;
+      --ink: #E7EDE0;
+      --ink-3: rgba(231, 237, 224, 0.55);
+      --accent: #CEE87A;
+      --clay: #C8683F;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: var(--surface-deep);
+      color: var(--ink);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      overflow: hidden;
+    }
+
+    .stage {
+      position: fixed;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      isolation: isolate;
+    }
+
+    /* ---- luz: dois focos lentos, um lima (marca) e um barro (saibro) ---- */
+    .glow {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(90px);
+      opacity: 0;
+      will-change: transform, opacity;
+      animation: glow-in 3.2s cubic-bezier(.2,.7,.2,1) forwards;
+    }
+    .glow--lime {
+      width: 70vmax; height: 70vmax;
+      left: 50%; top: 50%;
+      background: radial-gradient(circle, rgba(206,232,122,.22) 0%, rgba(206,232,122,0) 62%);
+      --o: .9;
+      animation: glow-in 3.2s cubic-bezier(.2,.7,.2,1) forwards,
+                 drift-a 46s ease-in-out 3s infinite alternate;
+    }
+    .glow--clay {
+      width: 55vmax; height: 55vmax;
+      left: 50%; top: 50%;
+      background: radial-gradient(circle, rgba(200,104,63,.16) 0%, rgba(200,104,63,0) 62%);
+      --o: .8;
+      animation: glow-in 4s cubic-bezier(.2,.7,.2,1) .4s forwards,
+                 drift-b 58s ease-in-out 3s infinite alternate;
+    }
+
+    @keyframes glow-in {
+      from { opacity: 0; transform: translate(-50%, -50%) scale(.85); }
+      to   { opacity: var(--o); transform: translate(-50%, -50%) scale(1); }
+    }
+    @keyframes drift-a {
+      0%   { transform: translate(-58%, -46%) scale(1); }
+      50%  { transform: translate(-44%, -56%) scale(1.08); }
+      100% { transform: translate(-54%, -42%) scale(.96); }
+    }
+    @keyframes drift-b {
+      0%   { transform: translate(-38%, -58%) scale(1); }
+      50%  { transform: translate(-60%, -40%) scale(1.1); }
+      100% { transform: translate(-46%, -60%) scale(.94); }
+    }
+
+    /* ---- vinheta ---- */
+    .vignette {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(ellipse at center, rgba(8,17,13,0) 35%, rgba(8,17,13,.55) 75%, rgba(8,17,13,.95) 100%);
+    }
+
+    /* ---- grão de filme ---- */
+    .grain {
+      position: absolute;
+      inset: -50%;
+      width: 200%;
+      height: 200%;
+      pointer-events: none;
+      opacity: .07;
+      mix-blend-mode: overlay;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .9 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+      background-size: 240px 240px;
+      animation: grain .7s steps(5) infinite;
+    }
+    @keyframes grain {
+      0%   { transform: translate(0, 0); }
+      20%  { transform: translate(-4%, 3%); }
+      40%  { transform: translate(3%, -5%); }
+      60%  { transform: translate(-6%, -2%); }
+      80%  { transform: translate(5%, 4%); }
+      100% { transform: translate(-2%, 6%); }
+    }
+
+    /* ---- conteúdo ---- */
+    .content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: clamp(28px, 5vh, 48px);
+      padding: 24px;
+      text-align: center;
+    }
+
+    .logo {
+      display: block;
+      width: clamp(160px, 34vw, 320px);
+      height: auto;
+      opacity: 0;
+      filter: blur(14px);
+      transform: translateY(8px) scale(.97);
+      animation: reveal 2.4s cubic-bezier(.2,.7,.2,1) .6s forwards;
+    }
+
+    .rule {
+      width: clamp(48px, 10vw, 96px);
+      height: 1px;
+      background: linear-gradient(90deg, rgba(206,232,122,0), var(--accent) 50%, rgba(206,232,122,0));
+      opacity: .7;
+      transform: scaleX(0);
+      animation: rule 1.8s cubic-bezier(.2,.7,.2,1) 1.9s forwards;
+    }
+
+    .soon {
+      margin: 0;
+      font-size: clamp(11px, 1.4vw, 14px);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: .7em;
+      text-indent: .7em; /* compensa o tracking da última letra */
+      color: var(--ink-3);
+      opacity: 0;
+      animation: soon 2.6s cubic-bezier(.2,.7,.2,1) 2.3s forwards;
+    }
+
+    @keyframes reveal {
+      to { opacity: 1; filter: blur(0); transform: translateY(0) scale(1); }
+    }
+    @keyframes rule {
+      to { transform: scaleX(1); }
+    }
+    @keyframes soon {
+      from { opacity: 0; letter-spacing: .7em; text-indent: .7em; }
+      to   { opacity: 1; letter-spacing: .42em; text-indent: .42em; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .glow, .logo, .rule, .soon, .grain { animation: none !important; }
+      .glow--lime { opacity: .9; transform: translate(-50%, -50%); }
+      .glow--clay { opacity: .8; transform: translate(-50%, -50%); }
+      .logo { opacity: 1; filter: none; transform: none; }
+      .rule { transform: scaleX(1); }
+      .soon { opacity: 1; letter-spacing: .42em; text-indent: .42em; }
+    }
+  </style>
+</head>
+<body>
+  <main class="stage">
+    <div class="glow glow--lime" aria-hidden="true"></div>
+    <div class="glow glow--clay" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <div class="content">
+      <img class="logo" src="assets/logo.svg" alt="Saibro" width="320" height="120">
+      <div class="rule" aria-hidden="true"></div>
+      <p class="soon">Em breve</p>
+    </div>
+  </main>
+</body>
+</html>

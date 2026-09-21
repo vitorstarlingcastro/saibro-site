@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de Privacidade · Saibro</title>
+  <meta name="description" content="Política de Privacidade do aplicativo Saibro (LGPD).">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://saibro.app.br/privacidade/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2220%22%20fill%3D%22%2333473A%22%2F%3E%3Cg%20transform%3D%22translate(15%2015)%20scale(0.7)%22%3E%3Cpath%20d%3D%22M50%208%20A42%2042%200%200%200%2050%2092%20C14%2057%2086%2043%2050%208%20Z%22%20fill%3D%22%23D8C9AC%22%20transform%3D%22translate(-4%20-5.5)%22%2F%3E%3Cpath%20d%3D%22M50%208%20A42%2042%200%200%201%2050%2092%20C14%2057%2086%2043%2050%208%20Z%22%20fill%3D%22%23CDBE9F%22%20transform%3D%22translate(4%205.5)%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap">
+  <style>
+:root {
+  --bg: #EFEAE1; --surface: #F7F4EC; --ink: #1F2C24; --ink2: #3F5648; --ink3: #6B7A6F;
+  --line: rgba(31, 44, 36, 0.14); --accent: #33473A; --sand: #D8C9AC; --mark-bg: #33473A;
+  --focus: #33473A;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E1710; --surface: #15221A; --ink: #EFEAE1; --ink2: #CDBE9F; --ink3: #9BA898;
+    --line: rgba(239, 234, 225, 0.16); --accent: #D8C9AC; --sand: #D8C9AC; --mark-bg: #1F2C24;
+    --focus: #D8C9AC;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0E1710; --surface: #15221A; --ink: #EFEAE1; --ink2: #CDBE9F; --ink3: #9BA898;
+  --line: rgba(239, 234, 225, 0.16); --accent: #D8C9AC; --sand: #D8C9AC; --mark-bg: #1F2C24;
+  --focus: #D8C9AC;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: 'Archivo', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible, .nav a:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+.top { border-bottom: 1px solid var(--line); }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; flex-wrap: wrap; }
+.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 600; letter-spacing: 0.01em; }
+.brand .mark { width: 28px; height: 28px; border-radius: 7px; }
+.nav { display: flex; gap: 4px; flex-wrap: wrap; margin: 0; padding: 0; list-style: none; }
+.nav a { display: inline-block; padding: 8px 12px; border-radius: 999px; color: var(--ink2); text-decoration: none; font-size: 15px; font-weight: 500; }
+.nav a:hover { background: var(--surface); }
+.nav a[aria-current="page"] { background: var(--accent); color: var(--bg); }
+main { padding: 40px 0 64px; }
+article h1 { font-size: 36px; line-height: 1.15; letter-spacing: -0.02em; font-weight: 700; margin: 0 0 8px; }
+article .version { color: var(--ink3); font-size: 15px; margin: 0 0 32px; }
+article h2 { font-size: 22px; line-height: 1.3; letter-spacing: -0.01em; font-weight: 600; margin: 40px 0 12px; padding-top: 20px; border-top: 1px solid var(--line); }
+article p { margin: 0 0 16px; }
+article ul { margin: 0 0 16px; padding-left: 22px; }
+article li { margin: 0 0 8px; }
+article li::marker { color: var(--ink3); }
+.foot { border-top: 1px solid var(--line); padding: 24px 0 40px; color: var(--ink3); font-size: 14px; }
+.foot .wrap { display: flex; gap: 8px 24px; flex-wrap: wrap; justify-content: space-between; }
+@media (max-width: 480px) {
+  body { font-size: 16px; }
+  article h1 { font-size: 30px; }
+  main { padding-top: 28px; }
+}
+@media print {
+  .top, .foot { display: none; }
+  body { background: #fff; color: #000; font-size: 12pt; }
+  a { color: #000; }
+}
+</style>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="/"><svg class="mark" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="20" fill="var(--mark-bg)"/><g transform="translate(15 15) scale(0.7)"><path d="M50 8 A42 42 0 0 0 50 92 C14 57 86 43 50 8 Z" fill="#D8C9AC" transform="translate(-4 -5.5)"/><path d="M50 8 A42 42 0 0 1 50 92 C14 57 86 43 50 8 Z" fill="#CDBE9F" transform="translate(4 5.5)"/></g></svg><span>Saibro</span></a>
+      <nav aria-label="Páginas legais"><ul class="nav"><li><a href="/termos/">Termos</a></li><li><a href="/privacidade/" aria-current="page">Privacidade</a></li><li><a href="/excluir-conta/">Excluir conta</a></li></ul></nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <article>
+      <h1>Política de Privacidade</h1>
+<p class="version">Versão 2026-09-20, em vigor desde 20 de setembro de 2026.</p>
+<p>Esta Política explica quais dados pessoais o Saibro coleta, por que coleta, com quem compartilha e quais são os seus direitos como titular, nos termos da Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018, "LGPD"). Ela vale para o aplicativo Saibro e para o site saibro.app.br.</p>
+<h2 id="s1">1. Quem somos</h2>
+<p>O Saibro é um aplicativo para quem joga tênis: atletas marcam partidas, lançam e confirmam placares, participam de rankings organizados por gestores e pagam inscrições e mensalidades pelo próprio app. O responsável pelo tratamento dos seus dados (controlador) é o mantenedor do Saibro, com sede no Brasil. O canal para qualquer assunto de privacidade é o e-mail <a href="mailto:privacidade@saibro.app.br">privacidade@saibro.app.br</a>, que também é o contato do nosso Encarregado de Proteção de Dados (DPO).</p>
+<h2 id="s2">2. Quais dados coletamos</h2>
+<p>Coletamos apenas o que o app precisa para funcionar. Nada é comprado de terceiros nem coletado de outras fontes.</p>
+<p>Dados que você nos dá ao criar a conta e montar o perfil:</p>
+<ul><li>Conta: e-mail e senha, ou o identificador da sua conta Google se você entrar com o Google. A senha nunca é armazenada em texto: o provedor de autenticação guarda apenas um hash.</li><li>Perfil: nome de exibição, foto, data de nascimento, cidade e estado, mão dominante, nível de jogo, papel declarado (atleta, gestor ou acompanhar) e a visibilidade que você escolheu para o perfil.</li><li>Consentimentos: qual versão dos Termos e desta Política você aceitou, e quando.</li></ul>
+<p>Dados que você nos dá se pedir o título de gestor ou for receber pagamentos:</p>
+<ul><li>Pedido de gestor: CPF ou CNPJ, telefone e um documento que comprove a sua atuação. O documento vai para um armazenamento privado, acessível só ao operador da plataforma que analisa o pedido.</li><li>Conta de recebimento: nome, tipo e número do documento (CPF ou CNPJ) e chave PIX. Esses dados são enviados ao Asaas, o meio de pagamento que faz o repasse ao gestor.</li></ul>
+<p>Dados gerados pelo uso do app:</p>
+<ul><li>Competição: partidas propostas e jogadas, placares, confirmações e contestações, confrontos, inscrições, classificações e badges. Uma partida guarda apenas os fatos do jogo: quem jogou, sets, games, quem venceu e como terminou.</li><li>Pagamentos: cobranças, valores, datas, status e os identificadores do Asaas. Para emitir uma cobrança, o seu nome e e-mail são cadastrados no Asaas como pagador. O pagamento em si acontece no ambiente do Asaas: o Saibro não recebe nem guarda dados de cartão.</li><li>Notificações: o token do seu aparelho para envio de push, as suas preferências por categoria e a sua caixa de notificações.</li></ul>
+<p>Dados técnicos:</p>
+<ul><li>Registros de servidor com endereço IP, data, hora e recurso acessado, usados para segurança e para diagnosticar falhas.</li><li>Erros do servidor, enviados para uma ferramenta de monitoramento sem o conteúdo das suas mensagens ou senhas.</li></ul>
+<p>O app pede permissão para usar a câmera e a galeria só quando você escolhe uma foto de perfil ou envia o documento de gestor, e permissão de notificações para os avisos de partida, ranking e pagamento. Não acessamos contatos, localização nem outros arquivos do aparelho. O app não usa SDKs de publicidade nem rastreadores de terceiros, e o site não usa cookies.</p>
+<h2 id="s3">3. Para que usamos e com que base legal</h2>
+<ul><li>Operar o serviço que você contratou (execução de contrato): autenticar, exibir o seu cartão de atleta, marcar partidas, calcular classificações, cobrar inscrições e mensalidades e enviar as notificações do domínio (partida proposta, placar a confirmar, cobrança vencendo).</li><li>Conceder e manter o título de gestor (execução de contrato e legítimo interesse em evitar fraude): analisar CPF ou CNPJ, telefone e documento antes de habilitar alguém a cobrar outras pessoas.</li><li>Cumprir obrigações legais: guardar registros de cobrança, estorno e repasse pelo prazo que a legislação fiscal, contábil e de meios de pagamento exige.</li><li>Manter a plataforma segura e estável (legítimo interesse): registros de acesso, prevenção a abuso e diagnóstico de erros.</li><li>Enviar comunicações de marketing (consentimento): novidades e ofertas, só se você marcar a opção no cadastro. Você pode retirar esse consentimento a qualquer momento escrevendo para <a href="mailto:privacidade@saibro.app.br">privacidade@saibro.app.br</a>, sem afetar o resto do serviço.</li></ul>
+<p>Não usamos os seus dados para tomar decisões automatizadas com efeito jurídico sobre você. A classificação de um ranking é calculada pelo app a partir dos placares confirmados, segundo o regulamento publicado pelo gestor, e o resultado de cada partida pode ser contestado e revisto por uma pessoa.</p>
+<h2 id="s4">4. Com quem compartilhamos</h2>
+<p>Nunca vendemos dados pessoais. Compartilhamos apenas com quem precisa deles para o serviço funcionar:</p>
+<ul><li>Outros usuários do Saibro: o seu nome de exibição e a sua foto aparecem para quem joga com você, no roster e na classificação dos rankings em que você está inscrito, e para o gestor dono desses rankings. O restante do perfil segue a visibilidade que você escolheu: pública ou privada.</li><li>Gestor dono: vê os dados da sua inscrição e da sua cobrança nos rankings dele, nunca o seu documento nem os seus dados de login.</li><li>Operadores que processam dados em nosso nome, sob contrato e só para a finalidade indicada: Supabase (autenticação, banco de dados e armazenamento de arquivos, em servidores na região de São Paulo), Fly.io (servidores do backend, em São Paulo), Google (login com Google e envio de notificações push pelo Firebase Cloud Messaging), Asaas (cadastro do pagador, cobranças, repasses e conta de recebimento), provedor de e-mail (mensagens de autenticação e notificações por e-mail) e Sentry (monitoramento de erros do servidor).</li><li>Autoridades públicas, quando houver obrigação legal ou ordem judicial.</li></ul>
+<p>Alguns desses operadores, como Google e Sentry, podem processar dados fora do Brasil. Nesses casos a transferência internacional segue o artigo 33 da LGPD, com cláusulas contratuais que garantem proteção equivalente à desta Política.</p>
+<h2 id="s5">5. Por quanto tempo guardamos</h2>
+<ul><li>Enquanto a sua conta existir, para prestar o serviço.</li><li>Se você pedir a exclusão da conta, ela entra em uma carência de 30 dias, durante a qual você pode desistir entrando de novo no app. Passado o prazo, os dados são anonimizados: nome, foto, data de nascimento, cidade, mão dominante, nível e papel são apagados, a foto é removida do armazenamento e o seu login é excluído do provedor de autenticação.</li><li>O identificador interno da conta e o histórico de partidas, confrontos e classificações são mantidos de forma anonimizada, porque apagá-los alteraria a classificação dos outros atletas.</li><li>Registros de cobrança, estorno e repasse são preservados pelo prazo exigido pela legislação fiscal, contábil e de meios de pagamento, sem os seus dados identificáveis além dos que a lei obriga a guardar.</li><li>Os dados do pedido de gestor (CPF ou CNPJ, telefone e documento) e as decisões sobre ele são mantidos como registro da análise feita, pelo prazo necessário para comprová-la e para cumprir obrigações legais.</li><li>Os registros de consentimento (qual versão você aceitou e quando) e as badges são mantidos como prova do aceite e do histórico esportivo, sem os dados que identificam você.</li><li>Registros técnicos de servidor são descartados em ciclos curtos, salvo quando necessários para investigar um incidente de segurança.</li></ul>
+<h2 id="s6">6. Seus direitos</h2>
+<p>A LGPD garante a você, entre outros, o direito de confirmar que tratamos os seus dados, acessá-los, corrigi-los, anonimizá-los, bloqueá-los ou eliminá-los, pedir a portabilidade, saber com quem compartilhamos, revogar consentimentos e se opor a tratamentos feitos sem consentimento.</p>
+<p>A maior parte desses direitos está no próprio app, em Perfil, Configurações:</p>
+<ul><li>Baixar meus dados: gera um arquivo com o seu perfil, consentimentos, badges e pedidos de gestor.</li><li>Editar perfil: corrige nome, foto, nascimento, cidade, mão dominante e nível.</li><li>Visibilidade do perfil: pública ou privada.</li><li>Notificações: liga e desliga cada categoria (a categoria Sistema não pode ser desligada, porque avisa sobre a sua conta e as suas cobranças). Para retirar o consentimento de marketing, escreva para o DPO.</li><li>Deletar conta: inicia a exclusão descrita na seção 5, com 30 dias para desistir. O passo a passo também está em <a href="/excluir-conta/">saibro.app.br/excluir-conta</a>.</li></ul>
+<p>Para o que não estiver no app, ou se preferir falar com uma pessoa, escreva para <a href="mailto:privacidade@saibro.app.br">privacidade@saibro.app.br</a> a partir do e-mail cadastrado na conta. Respondemos em até 15 dias. Se não ficar satisfeito, você pode apresentar uma reclamação à Autoridade Nacional de Proteção de Dados (ANPD).</p>
+<h2 id="s7">7. Como protegemos os seus dados</h2>
+<p>Todo o tráfego entre o app e os nossos servidores usa HTTPS. Senhas são guardadas apenas como hash pelo provedor de autenticação. Documentos de gestor ficam em um armazenamento privado, sem endereço público, acessível por links temporários assinados. O acesso administrativo é restrito a operadores identificados, e cada decisão sobre pedidos de gestor, estornos e correções de placar fica registrada. Nenhum sistema é infalível: se um incidente de segurança afetar os seus dados, avisaremos você e a ANPD conforme a LGPD exige.</p>
+<h2 id="s8">8. Crianças e adolescentes</h2>
+<p>O Saibro é para maiores de 13 anos. Menores de 18 anos só podem usar o app com autorização dos pais ou responsáveis, que podem exercer os direitos da seção 6 em nome do adolescente. Se soubermos de uma conta criada por criança com menos de 13 anos, ela será excluída.</p>
+<h2 id="s9">9. Alterações desta Política</h2>
+<p>Quando esta Política mudar, a nova versão será publicada nesta página com a data atualizada e avisada no app. Se a mudança afetar a forma como os seus dados são usados, poderemos pedir um novo aceite antes de continuar. As versões anteriores ficam disponíveis mediante pedido ao DPO.</p>
+<h2 id="s10">10. Contato</h2>
+<p>Encarregado de Proteção de Dados (DPO): <a href="mailto:privacidade@saibro.app.br">privacidade@saibro.app.br</a>.</p>
+    </article>
+  </main>
+  <footer class="foot">
+    <div class="wrap">
+      <span>Saibro · saibro.app.br · versão 2026-09-20</span>
+      <a href="mailto:privacidade@saibro.app.br">privacidade@saibro.app.br</a>
+    </div>
+  </footer>
+</body>
+</html>

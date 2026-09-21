@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Termos de Uso · Saibro</title>
+  <meta name="description" content="Termos de Uso do aplicativo Saibro.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://saibro.app.br/termos/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2220%22%20fill%3D%22%2333473A%22%2F%3E%3Cg%20transform%3D%22translate(15%2015)%20scale(0.7)%22%3E%3Cpath%20d%3D%22M50%208%20A42%2042%200%200%200%2050%2092%20C14%2057%2086%2043%2050%208%20Z%22%20fill%3D%22%23D8C9AC%22%20transform%3D%22translate(-4%20-5.5)%22%2F%3E%3Cpath%20d%3D%22M50%208%20A42%2042%200%200%201%2050%2092%20C14%2057%2086%2043%2050%208%20Z%22%20fill%3D%22%23CDBE9F%22%20transform%3D%22translate(4%205.5)%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap">
+  <style>
+:root {
+  --bg: #EFEAE1; --surface: #F7F4EC; --ink: #1F2C24; --ink2: #3F5648; --ink3: #6B7A6F;
+  --line: rgba(31, 44, 36, 0.14); --accent: #33473A; --sand: #D8C9AC; --mark-bg: #33473A;
+  --focus: #33473A;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E1710; --surface: #15221A; --ink: #EFEAE1; --ink2: #CDBE9F; --ink3: #9BA898;
+    --line: rgba(239, 234, 225, 0.16); --accent: #D8C9AC; --sand: #D8C9AC; --mark-bg: #1F2C24;
+    --focus: #D8C9AC;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0E1710; --surface: #15221A; --ink: #EFEAE1; --ink2: #CDBE9F; --ink3: #9BA898;
+  --line: rgba(239, 234, 225, 0.16); --accent: #D8C9AC; --sand: #D8C9AC; --mark-bg: #1F2C24;
+  --focus: #D8C9AC;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: 'Archivo', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible, .nav a:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+.top { border-bottom: 1px solid var(--line); }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; flex-wrap: wrap; }
+.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 600; letter-spacing: 0.01em; }
+.brand .mark { width: 28px; height: 28px; border-radius: 7px; }
+.nav { display: flex; gap: 4px; flex-wrap: wrap; margin: 0; padding: 0; list-style: none; }
+.nav a { display: inline-block; padding: 8px 12px; border-radius: 999px; color: var(--ink2); text-decoration: none; font-size: 15px; font-weight: 500; }
+.nav a:hover { background: var(--surface); }
+.nav a[aria-current="page"] { background: var(--accent); color: var(--bg); }
+main { padding: 40px 0 64px; }
+article h1 { font-size: 36px; line-height: 1.15; letter-spacing: -0.02em; font-weight: 700; margin: 0 0 8px; }
+article .version { color: var(--ink3); font-size: 15px; margin: 0 0 32px; }
+article h2 { font-size: 22px; line-height: 1.3; letter-spacing: -0.01em; font-weight: 600; margin: 40px 0 12px; padding-top: 20px; border-top: 1px solid var(--line); }
+article p { margin: 0 0 16px; }
+article ul { margin: 0 0 16px; padding-left: 22px; }
+article li { margin: 0 0 8px; }
+article li::marker { color: var(--ink3); }
+.foot { border-top: 1px solid var(--line); padding: 24px 0 40px; color: var(--ink3); font-size: 14px; }
+.foot .wrap { display: flex; gap: 8px 24px; flex-wrap: wrap; justify-content: space-between; }
+@media (max-width: 480px) {
+  body { font-size: 16px; }
+  article h1 { font-size: 30px; }
+  main { padding-top: 28px; }
+}
+@media print {
+  .top, .foot { display: none; }
+  body { background: #fff; color: #000; font-size: 12pt; }
+  a { color: #000; }
+}
+</style>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="/"><svg class="mark" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="20" fill="var(--mark-bg)"/><g transform="translate(15 15) scale(0.7)"><path d="M50 8 A42 42 0 0 0 50 92 C14 57 86 43 50 8 Z" fill="#D8C9AC" transform="translate(-4 -5.5)"/><path d="M50 8 A42 42 0 0 1 50 92 C14 57 86 43 50 8 Z" fill="#CDBE9F" transform="translate(4 5.5)"/></g></svg><span>Saibro</span></a>
+      <nav aria-label="Páginas legais"><ul class="nav"><li><a href="/termos/" aria-current="page">Termos</a></li><li><a href="/privacidade/">Privacidade</a></li><li><a href="/excluir-conta/">Excluir conta</a></li></ul></nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <article>
+      <h1>Termos de Uso</h1>
+<p class="version">Versão 2026-09-20, em vigor desde 20 de setembro de 2026.</p>
+<p>Estes Termos regulam o uso do aplicativo Saibro e do site saibro.app.br. Ao criar uma conta você declara que leu, entendeu e concorda com eles e com a Política de Privacidade, que é parte destes Termos. Se não concordar, não use o serviço.</p>
+<h2 id="s1">1. O que é o Saibro</h2>
+<p>O Saibro é uma plataforma para quem joga tênis. Nela, atletas marcam partidas entre si, lançam e confirmam placares, se inscrevem em rankings organizados por gestores e pagam inscrições e mensalidades pelo próprio app. O Saibro fornece a tecnologia: quem organiza cada ranking, define o regulamento, aprova inscrições e recebe os pagamentos é o gestor dono daquele ranking.</p>
+<h2 id="s2">2. Cadastro e conta</h2>
+<ul><li>Você precisa ter pelo menos 13 anos. Menores de 18 anos só podem usar o app com autorização dos pais ou responsáveis.</li><li>Os dados informados devem ser verdadeiros e atualizados. Uma conta é pessoal e intransferível: cada pessoa tem uma só.</li><li>Você é responsável pela senha e por tudo o que acontecer na sua conta. Avise <a href="mailto:privacidade@saibro.app.br">privacidade@saibro.app.br</a> se suspeitar de uso indevido.</li><li>O app só abre com o perfil mínimo preenchido: nome de exibição, data de nascimento e nível de jogo. Foto, cidade e mão dominante são opcionais.</li></ul>
+<h2 id="s3">3. Papéis</h2>
+<ul><li>Atleta é quem joga: propõe e aceita partidas, lança e confirma placares, se inscreve em rankings.</li><li>Gestor é quem organiza rankings e recebe pagamentos. É um título verificado: para obtê-lo é preciso enviar CPF ou CNPJ, telefone e um documento comprobatório, analisados manualmente pelo operador da plataforma, que pode aprovar ou recusar o pedido. Ser gestor dá poder apenas sobre os rankings que você mesmo criou.</li><li>Admin é o operador da plataforma: aprova títulos de gestor, estorna pagamentos e reprocessa pontuações quando necessário. Nunca é o dono de um ranking.</li></ul>
+<h2 id="s4">4. Partidas e placares</h2>
+<ul><li>Uma partida existe do convite ao placar confirmado. O formato (sets, games, tiebreak, vantagem) é combinado antes e não muda depois.</li><li>Quem lança o placar não o confirma: a confirmação cabe ao outro participante, manualmente ou de forma automática quando o prazo de resposta vence. Quem não concorda pode contestar dentro do prazo.</li><li>Em partidas amistosas, a contestação anula o placar e devolve a partida ao estado de jogar. Em partidas oficiais de ranking, ela vira uma disputa decidida pelo gestor dono.</li><li>W.O. e abandono são desfechos registrados como tais e produzem os efeitos previstos no regulamento do ranking.</li><li>Lançar placar falso, combinar resultado ou contestar de má-fé viola estes Termos.</li></ul>
+<h2 id="s5">5. Rankings</h2>
+<ul><li>Cada ranking tem um regulamento publicado pelo gestor dono, com formato, critérios de desempate, prazos e mensalidade. Ao se inscrever você aceita esse regulamento, que complementa estes Termos. O regulamento pode ser alterado pelo gestor sempre para a frente, sem mudar resultados já apurados; as condições contratadas (mensalidade, formato, parâmetros de pontuação) ficam congeladas por toda a temporada.</li><li>A inscrição nasce quando o gestor dono aprova o pedido e a primeira mensalidade é paga.</li><li>Os confrontos de cada mês são sorteados pelo app. A pontuação é calculada a partir dos fatos das partidas pelo motor de pontuação vigente na temporada, e nunca digitada à mão. A classificação é calculada na leitura, e a classificação final da fase regular é congelada.</li><li>O gestor dono pode corrigir ou anular um resultado já confirmado (override) e declarar W.O. administrativo depois de dar prazo de resposta. Toda intervenção é registrada, visível no histórico da partida e notificada aos dois atletas.</li><li>A mensalidade cobre um mês da fase regular. Mensalidade vencida sem pagamento configura inadimplência; o app não remove ninguém sozinho, mas o gestor dono pode remover a inscrição conforme o regulamento.</li></ul>
+<h2 id="s6">6. Pagamentos</h2>
+<ul><li>As cobranças (inscrições e mensalidades) são emitidas e processadas pelo Asaas, meio de pagamento contratado pela plataforma. O pagamento acontece no ambiente do Asaas; o Saibro não recebe dados de cartão.</li><li>Cada pagamento é dividido automaticamente entre o gestor dono e a plataforma (split). A comissão da plataforma é fixada no momento em que a cobrança nasce e mudanças de taxa não alteram cobranças existentes.</li><li>Para receber, o gestor precisa de uma conta de recebimento aprovada pelo Asaas. Enquanto ela não estiver aprovada, o gestor não pode cobrar.</li><li>Estornos são feitos pelo operador da plataforma, a pedido do gestor dono ou do atleta, conforme o regulamento e a legislação de consumo. Em um estorno, a taxa do meio de pagamento é absorvida pelo gestor, não descontada do atleta.</li><li>O gestor é o responsável pelo serviço que vende (a competição) e pelas obrigações fiscais sobre o que recebe. O Saibro intermedeia tecnologicamente a relação e responde pelo funcionamento da plataforma.</li></ul>
+<h2 id="s7">7. Conduta</h2>
+<p>É proibido usar o Saibro para:</p>
+<ul><li>Fraudar resultados, classificações ou pagamentos.</li><li>Enviar nome, foto ou documento falsos, ofensivos, ilegais ou de terceiros sem autorização.</li><li>Assediar, ameaçar ou discriminar outros usuários.</li><li>Acessar contas ou dados de outras pessoas, explorar falhas, sobrecarregar ou tentar contornar as proteções do serviço.</li><li>Copiar, revender ou automatizar o uso do serviço sem autorização.</li></ul>
+<p>Podemos remover conteúdo, suspender ou encerrar contas que violem estes Termos, com aviso quando possível.</p>
+<h2 id="s8">8. Seu conteúdo e propriedade intelectual</h2>
+<ul><li>O nome, a foto e os demais dados que você envia continuam seus. Você nos autoriza a exibi-los no app para as finalidades do serviço (cartão de atleta, roster, classificação) enquanto a conta existir, nos limites da Política de Privacidade.</li><li>O aplicativo, o site, a marca Saibro, o design e o código são protegidos por direitos de propriedade intelectual e não podem ser copiados ou reproduzidos sem autorização.</li></ul>
+<h2 id="s9">9. Disponibilidade e responsabilidade</h2>
+<ul><li>O Saibro está em fase inicial e pode mudar, ficar indisponível para manutenção ou apresentar falhas. Trabalhamos para avisar antes e corrigir rápido.</li><li>O Saibro não responde pelas decisões esportivas do gestor dono (regulamento, aprovação de inscrição, decisão de disputa, override), pelo comportamento de outros usuários nem pelo que acontece fora do app, como o comparecimento a uma partida ou o uso de uma quadra.</li><li>Nada nestes Termos exclui ou limita direitos que o Código de Defesa do Consumidor ou outra lei não permita excluir ou limitar.</li></ul>
+<h2 id="s10">10. Encerramento e exclusão da conta</h2>
+<ul><li>Você pode pedir a exclusão da conta a qualquer momento no app, em Perfil, Configurações, Deletar conta. A conta entra em uma carência de 30 dias, em que você pode desistir; depois disso os seus dados são anonimizados conforme a Política de Privacidade. O passo a passo está em <a href="/excluir-conta/">saibro.app.br/excluir-conta</a>.</li><li>Inscrições em rankings e cobranças em aberto seguem o regulamento do ranking; excluir a conta não apaga o histórico anonimizado das partidas nem os registros financeiros que a lei obriga a guardar.</li><li>Podemos encerrar a sua conta por violação destes Termos ou descontinuar o serviço, com aviso prévio razoável.</li></ul>
+<h2 id="s11">11. Comunicações</h2>
+<p>Falamos com você pelo app (notificações e caixa de notificações), por push e por e-mail. Avisos sobre a sua conta e as suas cobranças são parte do serviço e não podem ser desligados. Comunicações de marketing só são enviadas com o seu consentimento, que pode ser retirado a qualquer momento pelo e-mail <a href="mailto:privacidade@saibro.app.br">privacidade@saibro.app.br</a>.</p>
+<h2 id="s12">12. Alterações destes Termos</h2>
+<p>Quando estes Termos mudarem, a nova versão será publicada nesta página com a data atualizada e avisada no app. Se a mudança for relevante, poderemos pedir um novo aceite antes de continuar. Continuar usando o app depois do aviso significa concordar com a versão nova.</p>
+<h2 id="s13">13. Lei aplicável e foro</h2>
+<p>Estes Termos são regidos pelas leis da República Federativa do Brasil. Para resolver qualquer controvérsia fica eleito o foro do domicílio do usuário. Antes disso, tentaremos resolver diretamente: escreva para <a href="mailto:privacidade@saibro.app.br">privacidade@saibro.app.br</a>.</p>
+    </article>
+  </main>
+  <footer class="foot">
+    <div class="wrap">
+      <span>Saibro · saibro.app.br · versão 2026-09-20</span>
+      <a href="mailto:privacidade@saibro.app.br">privacidade@saibro.app.br</a>
+    </div>
+  </footer>
+</body>
+</html>

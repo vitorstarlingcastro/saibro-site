@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Excluir a conta · Saibro</title>
+  <meta name="description" content="Como excluir a sua conta do Saibro e o que acontece com os dados.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://saibro.app.br/excluir-conta/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2220%22%20fill%3D%22%2333473A%22%2F%3E%3Cg%20transform%3D%22translate(15%2015)%20scale(0.7)%22%3E%3Cpath%20d%3D%22M50%208%20A42%2042%200%200%200%2050%2092%20C14%2057%2086%2043%2050%208%20Z%22%20fill%3D%22%23D8C9AC%22%20transform%3D%22translate(-4%20-5.5)%22%2F%3E%3Cpath%20d%3D%22M50%208%20A42%2042%200%200%201%2050%2092%20C14%2057%2086%2043%2050%208%20Z%22%20fill%3D%22%23CDBE9F%22%20transform%3D%22translate(4%205.5)%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap">
+  <style>
+:root {
+  --bg: #EFEAE1; --surface: #F7F4EC; --ink: #1F2C24; --ink2: #3F5648; --ink3: #6B7A6F;
+  --line: rgba(31, 44, 36, 0.14); --accent: #33473A; --sand: #D8C9AC; --mark-bg: #33473A;
+  --focus: #33473A;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E1710; --surface: #15221A; --ink: #EFEAE1; --ink2: #CDBE9F; --ink3: #9BA898;
+    --line: rgba(239, 234, 225, 0.16); --accent: #D8C9AC; --sand: #D8C9AC; --mark-bg: #1F2C24;
+    --focus: #D8C9AC;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0E1710; --surface: #15221A; --ink: #EFEAE1; --ink2: #CDBE9F; --ink3: #9BA898;
+  --line: rgba(239, 234, 225, 0.16); --accent: #D8C9AC; --sand: #D8C9AC; --mark-bg: #1F2C24;
+  --focus: #D8C9AC;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: 'Archivo', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible, .nav a:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+.top { border-bottom: 1px solid var(--line); }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; flex-wrap: wrap; }
+.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 600; letter-spacing: 0.01em; }
+.brand .mark { width: 28px; height: 28px; border-radius: 7px; }
+.nav { display: flex; gap: 4px; flex-wrap: wrap; margin: 0; padding: 0; list-style: none; }
+.nav a { display: inline-block; padding: 8px 12px; border-radius: 999px; color: var(--ink2); text-decoration: none; font-size: 15px; font-weight: 500; }
+.nav a:hover { background: var(--surface); }
+.nav a[aria-current="page"] { background: var(--accent); color: var(--bg); }
+main { padding: 40px 0 64px; }
+article h1 { font-size: 36px; line-height: 1.15; letter-spacing: -0.02em; font-weight: 700; margin: 0 0 8px; }
+article .version { color: var(--ink3); font-size: 15px; margin: 0 0 32px; }
+article h2 { font-size: 22px; line-height: 1.3; letter-spacing: -0.01em; font-weight: 600; margin: 40px 0 12px; padding-top: 20px; border-top: 1px solid var(--line); }
+article p { margin: 0 0 16px; }
+article ul { margin: 0 0 16px; padding-left: 22px; }
+article li { margin: 0 0 8px; }
+article li::marker { color: var(--ink3); }
+.foot { border-top: 1px solid var(--line); padding: 24px 0 40px; color: var(--ink3); font-size: 14px; }
+.foot .wrap { display: flex; gap: 8px 24px; flex-wrap: wrap; justify-content: space-between; }
+@media (max-width: 480px) {
+  body { font-size: 16px; }
+  article h1 { font-size: 30px; }
+  main { padding-top: 28px; }
+}
+@media print {
+  .top, .foot { display: none; }
+  body { background: #fff; color: #000; font-size: 12pt; }
+  a { color: #000; }
+}
+</style>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="/"><svg class="mark" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="20" fill="var(--mark-bg)"/><g transform="translate(15 15) scale(0.7)"><path d="M50 8 A42 42 0 0 0 50 92 C14 57 86 43 50 8 Z" fill="#D8C9AC" transform="translate(-4 -5.5)"/><path d="M50 8 A42 42 0 0 1 50 92 C14 57 86 43 50 8 Z" fill="#CDBE9F" transform="translate(4 5.5)"/></g></svg><span>Saibro</span></a>
+      <nav aria-label="Páginas legais"><ul class="nav"><li><a href="/termos/">Termos</a></li><li><a href="/privacidade/">Privacidade</a></li><li><a href="/excluir-conta/" aria-current="page">Excluir conta</a></li></ul></nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <article>
+      <h1>Excluir a conta</h1>
+<p>Você pode excluir a sua conta do Saibro a qualquer momento, pelo próprio app ou por e-mail. A exclusão tem uma carência de 30 dias para você desistir e, depois, os seus dados são anonimizados como descrito na Política de Privacidade.</p>
+<h2 id="s1">Pelo app</h2>
+<ul><li>Abra o Saibro e entre na aba Perfil.</li><li>Toque em Configurações e depois em Deletar conta.</li><li>Digite DELETAR para confirmar. A conta é desconectada na hora e entra na carência de 30 dias.</li><li>Para desistir dentro desse prazo, entre de novo com a mesma conta: o app oferece cancelar a exclusão.</li></ul>
+<h2 id="s2">Por e-mail</h2>
+<p>Se não conseguir entrar no app, escreva para <a href="mailto:privacidade@saibro.app.br">privacidade@saibro.app.br</a> a partir do e-mail cadastrado na conta, com o assunto "Excluir conta". Confirmamos o pedido por e-mail e iniciamos a mesma carência de 30 dias.</p>
+<h2 id="s3">O que é apagado</h2>
+<ul><li>Nome de exibição, foto, data de nascimento, cidade e estado, mão dominante, nível de jogo e papel.</li><li>O seu login (e-mail e senha ou vínculo com a conta Google) no provedor de autenticação.</li><li>O token de notificações do seu aparelho.</li></ul>
+<h2 id="s4">O que é mantido, de forma anonimizada</h2>
+<ul><li>O identificador interno da conta e o histórico de partidas, confrontos e classificações, porque apagá-los alteraria a classificação dos outros atletas. Eles deixam de estar ligados a você.</li><li>Registros de cobrança, estorno e repasse, pelo prazo que a legislação fiscal, contábil e de meios de pagamento exige.</li><li>Os dados do pedido de gestor (CPF ou CNPJ, telefone e documento) e as decisões sobre ele, como registro da análise feita, pelo prazo necessário para comprová-la.</li><li>Os registros de consentimento, como prova do aceite.</li></ul>
+<h2 id="s5">Antes de excluir</h2>
+<ul><li>Baixe os seus dados em Perfil, Configurações, Baixar meus dados, se quiser guardar uma cópia.</li><li>Inscrições em rankings e cobranças em aberto seguem o regulamento de cada ranking; converse com o gestor dono antes de sair no meio de uma temporada.</li></ul>
+<p>Dúvidas: <a href="mailto:privacidade@saibro.app.br">privacidade@saibro.app.br</a>.</p>
+    </article>
+  </main>
+  <footer class="foot">
+    <div class="wrap">
+      <span>Saibro · saibro.app.br</span>
+      <a href="mailto:privacidade@saibro.app.br">privacidade@saibro.app.br</a>
+    </div>
+  </footer>
+</body>
+</html>

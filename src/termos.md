@@ -76,11 +76,11 @@ Podemos remover conteúdo, suspender ou encerrar contas que violem estes Termos,
 
 ## 11. Comunicações
 
-Falamos com você pelo app (notificações e caixa de notificações), por push e por e-mail. Avisos sobre a sua conta e as suas cobranças são parte do serviço e não podem ser desligados. Comunicações de marketing só são enviadas com o seu consentimento, que pode ser retirado a qualquer momento pelo e-mail privacidade@saibro.app.br.
+Falamos com você pelo app (notificações e caixa de notificações), por push e por e-mail. Avisos sobre a sua conta e as suas cobranças são parte do serviço e não podem ser desligados. Comunicações de marketing só são enviadas com o seu consentimento, que pode ser retirado a qualquer momento no app, em Configurações.
 
 ## 12. Alterações destes Termos
 
-Quando estes Termos mudarem, a nova versão será publicada nesta página com a data atualizada e avisada no app. Se a mudança for relevante, poderemos pedir um novo aceite antes de continuar. Continuar usando o app depois do aviso significa concordar com a versão nova.
+Quando estes Termos mudarem, a nova versão será publicada nesta página com a data atualizada e avisada no app. Se a mudança for relevante, a versão ganha uma nova data e o app pede um novo aceite antes de você continuar. Nas demais, continuar usando o app depois do aviso significa concordar com a versão nova.
 
 ## 13. Lei aplicável e foro
 

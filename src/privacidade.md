@@ -42,7 +42,7 @@ O app pede permissão para usar a câmera e a galeria só quando você escolhe u
 - Conceder e manter o título de gestor (execução de contrato e legítimo interesse em evitar fraude): analisar CPF ou CNPJ, telefone e documento antes de habilitar alguém a cobrar outras pessoas.
 - Cumprir obrigações legais: guardar registros de cobrança, estorno e repasse pelo prazo que a legislação fiscal, contábil e de meios de pagamento exige.
 - Manter a plataforma segura e estável (legítimo interesse): registros de acesso, prevenção a abuso e diagnóstico de erros.
-- Enviar comunicações de marketing (consentimento): novidades e ofertas, só se você marcar a opção no cadastro. Você pode retirar esse consentimento a qualquer momento escrevendo para privacidade@saibro.app.br, sem afetar o resto do serviço.
+- Enviar comunicações de marketing (consentimento): novidades e ofertas, só se você marcar a opção no cadastro ou ligá-la no app. Você pode retirar esse consentimento a qualquer momento no app, em Configurações, E-mails de novidades, sem afetar o resto do serviço.
 
 Não usamos os seus dados para tomar decisões automatizadas com efeito jurídico sobre você. A classificação de um ranking é calculada pelo app a partir dos placares confirmados, segundo o regulamento publicado pelo gestor, e o resultado de cada partida pode ser contestado e revisto por uma pessoa.
 
@@ -60,10 +60,10 @@ Alguns desses operadores, como Google e Sentry, podem processar dados fora do Br
 ## 5. Por quanto tempo guardamos
 
 - Enquanto a sua conta existir, para prestar o serviço.
-- Se você pedir a exclusão da conta, ela entra em uma carência de 30 dias, durante a qual você pode desistir entrando de novo no app. Passado o prazo, os dados são anonimizados: nome, foto, data de nascimento, cidade, mão dominante, nível e papel são apagados, a foto é removida do armazenamento e o seu login é excluído do provedor de autenticação.
+- Se você pedir a exclusão da conta, ela entra em uma carência de 30 dias, durante a qual você pode desistir entrando de novo no app. Passado o prazo, os dados são anonimizados: nome, foto, data de nascimento, cidade, mão dominante, nível e papel são apagados, a foto é removida do armazenamento, o CPF ou CNPJ, o telefone e o documento de um pedido de gestor são apagados e o seu login é excluído do provedor de autenticação.
 - O identificador interno da conta e o histórico de partidas, confrontos e classificações são mantidos de forma anonimizada, porque apagá-los alteraria a classificação dos outros atletas.
 - Registros de cobrança, estorno e repasse são preservados pelo prazo exigido pela legislação fiscal, contábil e de meios de pagamento, sem os seus dados identificáveis além dos que a lei obriga a guardar.
-- Os dados do pedido de gestor (CPF ou CNPJ, telefone e documento) e as decisões sobre ele são mantidos como registro da análise feita, pelo prazo necessário para comprová-la e para cumprir obrigações legais.
+- Do pedido de gestor, a decisão (aprovado ou recusado, a data e o motivo da recusa) é mantida como registro da análise feita, pelo prazo necessário para comprová-la e para cumprir obrigações legais. O CPF ou CNPJ, o telefone e o documento saem na anonimização, e um pedido que ainda aguardava análise é encerrado.
 - Os registros de consentimento (qual versão você aceitou e quando) e as badges são mantidos como prova do aceite e do histórico esportivo, sem os dados que identificam você.
 - Registros técnicos de servidor são descartados em ciclos curtos, salvo quando necessários para investigar um incidente de segurança.
 
@@ -76,7 +76,8 @@ A maior parte desses direitos está no próprio app, em Perfil, Configurações:
 - Baixar meus dados: gera um arquivo com o seu perfil, consentimentos, badges e pedidos de gestor.
 - Editar perfil: corrige nome, foto, nascimento, cidade, mão dominante e nível.
 - Visibilidade do perfil: pública ou privada.
-- Notificações: liga e desliga cada categoria (a categoria Sistema não pode ser desligada, porque avisa sobre a sua conta e as suas cobranças). Para retirar o consentimento de marketing, escreva para o DPO.
+- Notificações: liga e desliga cada categoria (a categoria Sistema não pode ser desligada, porque avisa sobre a sua conta e as suas cobranças).
+- E-mails de novidades: dá ou retira o consentimento de marketing.
 - Deletar conta: inicia a exclusão descrita na seção 5, com 30 dias para desistir. O passo a passo também está em saibro.app.br/excluir-conta.
 
 Para o que não estiver no app, ou se preferir falar com uma pessoa, escreva para privacidade@saibro.app.br a partir do e-mail cadastrado na conta. Respondemos em até 15 dias. Se não ficar satisfeito, você pode apresentar uma reclamação à Autoridade Nacional de Proteção de Dados (ANPD).
@@ -91,7 +92,7 @@ O Saibro é para maiores de 13 anos. Menores de 18 anos só podem usar o app com
 
 ## 9. Alterações desta Política
 
-Quando esta Política mudar, a nova versão será publicada nesta página com a data atualizada e avisada no app. Se a mudança afetar a forma como os seus dados são usados, poderemos pedir um novo aceite antes de continuar. As versões anteriores ficam disponíveis mediante pedido ao DPO.
+Quando esta Política mudar, a nova versão será publicada nesta página com a data atualizada e avisada no app. Se a mudança afetar a forma como os seus dados são usados, a versão ganha uma nova data e o app pede o seu aceite antes de você continuar. As versões anteriores ficam disponíveis mediante pedido ao DPO.
 
 ## 10. Contato
 

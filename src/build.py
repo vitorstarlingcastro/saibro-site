@@ -242,7 +242,7 @@ def render_page(slug: str, doc: Doc, description: str) -> str:
   </main>
   <footer class="foot">
     <div class="wrap">
-      <span>Saibro · saibro.app.br{version_meta}</span>
+      <span>Saibro · mantido por Vitor Starling Castro · saibro.app.br{version_meta}</span>
       <a href="mailto:privacidade@saibro.app.br">privacidade@saibro.app.br</a>
     </div>
   </footer>

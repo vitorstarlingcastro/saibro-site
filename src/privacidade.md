@@ -6,7 +6,7 @@ Esta Política explica quais dados pessoais o Saibro coleta, por que coleta, com
 
 ## 1. Quem somos
 
-O Saibro é um aplicativo para quem joga tênis: atletas marcam partidas, lançam e confirmam placares, participam de rankings organizados por gestores e pagam inscrições e mensalidades pelo próprio app. O responsável pelo tratamento dos seus dados (controlador) é o mantenedor do Saibro, com sede no Brasil. O canal para qualquer assunto de privacidade é o e-mail privacidade@saibro.app.br, que também é o contato do nosso Encarregado de Proteção de Dados (DPO).
+O Saibro é um aplicativo para quem joga tênis: atletas marcam partidas, lançam e confirmam placares, participam de rankings organizados por gestores e pagam inscrições e mensalidades pelo próprio app. O responsável pelo tratamento dos seus dados (controlador) é Vitor Starling Castro, pessoa física com domicílio no Brasil, que mantém o Saibro. O canal para qualquer assunto de privacidade é o e-mail privacidade@saibro.app.br, que também é o contato do nosso Encarregado de Proteção de Dados (DPO).
 
 ## 2. Quais dados coletamos
 
@@ -40,7 +40,7 @@ O app pede permissão para usar a câmera e a galeria só quando você escolhe u
 
 - Operar o serviço que você contratou (execução de contrato): autenticar, exibir o seu cartão de atleta, marcar partidas, calcular classificações, cobrar inscrições e mensalidades e enviar as notificações do domínio (partida proposta, placar a confirmar, cobrança vencendo).
 - Conceder e manter o título de gestor (execução de contrato e legítimo interesse em evitar fraude): analisar CPF ou CNPJ, telefone e documento antes de habilitar alguém a cobrar outras pessoas.
-- Cumprir obrigações legais: guardar registros de cobrança, estorno e repasse pelo prazo que a legislação fiscal, contábil e de meios de pagamento exige.
+- Cumprir obrigações legais: guardar registros de cobrança, estorno e repasse por 5 anos, o prazo que a legislação fiscal e contábil exige.
 - Manter a plataforma segura e estável (legítimo interesse): registros de acesso, prevenção a abuso e diagnóstico de erros.
 - Enviar comunicações de marketing (consentimento): novidades e ofertas, só se você marcar a opção no cadastro ou ligá-la no app. Você pode retirar esse consentimento a qualquer momento no app, em Configurações, E-mails de novidades, sem afetar o resto do serviço.
 
@@ -52,17 +52,17 @@ Nunca vendemos dados pessoais. Compartilhamos apenas com quem precisa deles para
 
 - Outros usuários do Saibro: o seu nome de exibição e a sua foto aparecem para quem joga com você, no roster e na classificação dos rankings em que você está inscrito, e para o gestor dono desses rankings. O restante do perfil segue a visibilidade que você escolheu: pública ou privada.
 - Gestor dono: vê os dados da sua inscrição e da sua cobrança nos rankings dele, nunca o seu documento nem os seus dados de login.
-- Operadores que processam dados em nosso nome, sob contrato e só para a finalidade indicada: Supabase (autenticação, banco de dados e armazenamento de arquivos, em servidores na região de São Paulo), Fly.io (servidores do backend, em São Paulo), Google (login com Google e envio de notificações push pelo Firebase Cloud Messaging), Asaas (cadastro do pagador, cobranças, repasses e conta de recebimento), provedor de e-mail (mensagens de autenticação e notificações por e-mail) e Sentry (monitoramento de erros do servidor).
+- Operadores que processam dados em nosso nome, sob contrato e só para a finalidade indicada: Supabase (autenticação, banco de dados e armazenamento de arquivos, em servidores na região de São Paulo), Fly.io (servidores do backend, em São Paulo), Google (login com Google e envio de notificações push pelo Firebase Cloud Messaging), Asaas (cadastro do pagador, cobranças, repasses e conta de recebimento), Resend (e-mails de autenticação, como a confirmação do cadastro e a troca de senha) e Sentry (monitoramento de erros do servidor).
 - Autoridades públicas, quando houver obrigação legal ou ordem judicial.
 
-Alguns desses operadores, como Google e Sentry, podem processar dados fora do Brasil. Nesses casos a transferência internacional segue o artigo 33 da LGPD, com cláusulas contratuais que garantem proteção equivalente à desta Política.
+Alguns desses operadores, como Google, Resend e Sentry, podem processar dados fora do Brasil. Nesses casos a transferência internacional segue o artigo 33 da LGPD, com cláusulas contratuais que garantem proteção equivalente à desta Política.
 
 ## 5. Por quanto tempo guardamos
 
 - Enquanto a sua conta existir, para prestar o serviço.
 - Se você pedir a exclusão da conta, ela entra em uma carência de 30 dias, durante a qual você pode desistir entrando de novo no app. Passado o prazo, os dados são anonimizados: nome, foto, data de nascimento, cidade, mão dominante, nível e papel são apagados, a foto é removida do armazenamento, o CPF ou CNPJ, o telefone e o documento de um pedido de gestor são apagados e o seu login é excluído do provedor de autenticação.
 - O identificador interno da conta e o histórico de partidas, confrontos e classificações são mantidos de forma anonimizada, porque apagá-los alteraria a classificação dos outros atletas.
-- Registros de cobrança, estorno e repasse são preservados pelo prazo exigido pela legislação fiscal, contábil e de meios de pagamento, sem os seus dados identificáveis além dos que a lei obriga a guardar.
+- Registros de cobrança, estorno e repasse são preservados por 5 anos, o prazo exigido pela legislação fiscal e contábil, sem os seus dados identificáveis além dos que a lei obriga a guardar.
 - Do pedido de gestor, a decisão (aprovado ou recusado, a data e o motivo da recusa) é mantida como registro da análise feita, pelo prazo necessário para comprová-la e para cumprir obrigações legais. O CPF ou CNPJ, o telefone e o documento saem na anonimização, e um pedido que ainda aguardava análise é encerrado.
 - Os registros de consentimento (qual versão você aceitou e quando) e as badges são mantidos como prova do aceite e do histórico esportivo, sem os dados que identificam você.
 - Registros técnicos de servidor são descartados em ciclos curtos, salvo quando necessários para investigar um incidente de segurança.

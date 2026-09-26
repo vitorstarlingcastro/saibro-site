@@ -6,7 +6,7 @@ Estes Termos regulam o uso do aplicativo Saibro e do site saibro.app.br. Ao cria
 
 ## 1. O que é o Saibro
 
-O Saibro é uma plataforma para quem joga tênis. Nela, atletas marcam partidas entre si, lançam e confirmam placares, se inscrevem em rankings organizados por gestores e pagam inscrições e mensalidades pelo próprio app. O Saibro fornece a tecnologia: quem organiza cada ranking, define o regulamento, aprova inscrições e recebe os pagamentos é o gestor dono daquele ranking.
+O Saibro é uma plataforma para quem joga tênis. Nela, atletas marcam partidas entre si, lançam e confirmam placares, se inscrevem em rankings organizados por gestores e pagam inscrições e mensalidades pelo próprio app. O Saibro fornece a tecnologia: quem organiza cada ranking, define o regulamento, aprova inscrições e recebe os pagamentos é o gestor dono daquele ranking. O Saibro é mantido por Vitor Starling Castro, pessoa física com domicílio no Brasil.
 
 ## 2. Cadastro e conta
 

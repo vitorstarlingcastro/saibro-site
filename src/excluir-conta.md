@@ -23,7 +23,7 @@ Se não conseguir entrar no app, escreva para privacidade@saibro.app.br a partir
 ## O que é mantido, de forma anonimizada
 
 - O identificador interno da conta e o histórico de partidas, confrontos e classificações, porque apagá-los alteraria a classificação dos outros atletas. Eles deixam de estar ligados a você.
-- Registros de cobrança, estorno e repasse, pelo prazo que a legislação fiscal, contábil e de meios de pagamento exige.
+- Registros de cobrança, estorno e repasse, por 5 anos, o prazo que a legislação fiscal e contábil exige.
 - A decisão sobre um pedido de gestor (aprovado ou recusado, a data e o motivo da recusa), como registro da análise feita, pelo prazo necessário para comprová-la. Um pedido que ainda aguardava análise é encerrado.
 - Os registros de consentimento, como prova do aceite.
 
